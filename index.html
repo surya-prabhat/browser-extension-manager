@@ -11,6 +11,11 @@
   <title> Browser extensions manager UI</title>
   <link rel="stylesheet" href="style.css">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
 </head>
 
 <body>
@@ -40,24 +45,17 @@
       </svg>
     </header>
     <!-- extensions list -->
-     <div class="toggle-section">
+    <div class="toggle-section">
       <h2 class="heading">Extensions List</h2>
       <div class="toggle-buttons">
-        <button class="all-button">All</button>
-        <button class="active-button">Active</button>
-        <button class="inactive-button">Inactive</button>
+        <button class="toggle-switch" id="all-button">All</button>
+        <button class="toggle-switch" id="active-button">Active</button>
+        <button class="toggle-switch" id="inactive-button">Inactive</button>
       </div>
-     </div>
-     <div class="extension-cards">
-      <div class="card-desc">
-        <img src="assets\images\logo-console-plus.svg" alt="">
-        <div class="description">
-          <h4 class="extension-heading">DevLens</h4>
-          <P class="extension-desc">Quickly inspect page layouts and viasualize element boundaries</P>
-        </div>
-      </div>
-      <input type="checkbox" checked>
-     </div>
+    </div>
+    <div class="extension-cards">
+
+    </div>
   </div>
 
   <!-- JS and axios -->
@@ -67,3 +65,4 @@
 </body>
 
 </html>
+
